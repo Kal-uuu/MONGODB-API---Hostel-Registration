@@ -5,8 +5,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-print(os.getenv('USER'))
-print(os.getenv('PASSWORD'))
 
 uri = (f"mongodb+srv://{os.getenv('USER')}:{os.getenv('PASSWORD')}@cluster0.dxx2gkl.mongodb.net/?retryWrites=true"
        f"&w=majority"
